@@ -1,0 +1,76 @@
+.btn-category {
+  display: block; /* Ensures button is a block-level element */
+  outline: none;
+  border: none;
+  color: #fff; /* White text for visibility */
+  position: absolute;
+  top: 250px;
+  left: 90px;
+  width: 100px;
+  z-index: 10;
+  text-decoration: none;
+  opacity: 0;
+  background-color: #4A90E2; /* Background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding for touch target */
+  font-size: 16px; /* Set a base font size */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Button hover effect */
+.btn-category:hover {
+  background-color: #357ABD; /* Slightly darker shade on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+.categoryDiv {
+  margin: 0 15px; /* Space on sides */
+  position: relative;
+  height: 345px;
+  width: 60%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center; /* Center the items within */
+  align-items: center; /* Vertically center */
+  overflow: hidden; /* Hide overflow for rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transitions */
+}
+
+.categoryDiv:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.img-category {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.categoryDiv:hover .img-category {
+  opacity: 0.7; /* Decrease opacity on hover */
+}
+
+.categoryDiv:hover .btn-category {
+  opacity: 1; /* Show button on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .btn-category {
+      width: 80px; /* Adjust width */
+      font-size: 14px; /* Smaller font size */
+  }
+
+  .categoryDiv {
+      width: 100%; /* Full width */
+      height: auto; /* Auto height */
+      flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .img-category {
+      height: auto; /* Maintain aspect ratio */
+  }
+}

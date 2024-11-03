@@ -1,0 +1,40 @@
+.link {
+    text-decoration: none;
+    color: #f0f0f0; /* Lighter gray for contrast */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-size: 16px; /* Set a base font size for consistency */
+    margin: 0 5px; /* Added margin for spacing */
+    
+    &:hover {
+        color: #00bcd4; /* Bright cyan for hover effect */
+        text-shadow: 0 0 5px rgba(0, 188, 212, 0.5); /* Optional glow effect */
+    }
+
+    &:focus {
+        outline: 2px dashed #00bcd4; /* Focus outline for accessibility */
+        outline-offset: 2px; /* Space between outline and element */
+    }
+}
+
+.social {
+    background-color: #1c1c1c; /* Darker background */
+    border: 1px solid #1c1c1c; /* Match border with background */
+    color: #f0f0f0; /* Light gray text for visibility */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Added padding for better touch target */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    font-size: 16px; /* Consistent font size */
+    margin: 5px; /* Margin for spacing */
+    display: inline-block; /* Ensures button-like appearance */
+    
+    &:hover {
+        background-color: #00bcd4; /* Bright cyan background on hover */
+        color: #fff; /* White text color on hover */
+        transform: scale(1.05); /* Slightly scale up on hover */
+    }
+
+    &:focus {
+        outline: 2px dashed #00bcd4; /* Focus outline for accessibility */
+        outline-offset: 2px; /* Space between outline and element */
+    }
+}

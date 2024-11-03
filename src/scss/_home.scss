@@ -1,0 +1,99 @@
+body{
+  background-color: #fbf5df;
+}
+.hero {
+  background-image: url('../data/assets/images/main.jpg'); /* Update this path */
+  height: 100vh; /* Full height */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  display: flex; /* Centering content */
+  justify-content: center; /* Centering content */
+  align-items: center; /* Centering content */
+  color: #ffffff; /* Changed to white for contrast */
+  padding: 20px; /* Padding to avoid content touching edges */
+  animation: fadeIn 1s; /* Fade-in animation */
+  text-align: center; /* Center text for better alignment */
+}
+
+#hero-title {
+  font-weight: bold;
+  font-size: 40px; /* Increased font size */
+  color: #f39c12; /* Updated to a bright orange color */
+  animation: slideIn 1s; /* Slide-in animation */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added shadow for depth */
+}
+
+#hero-text {
+  width: 100%; /* Make text width full for small screens */
+  max-width: 60%; /* Restrict maximum width on larger screens */
+  display: block;
+  margin: auto;
+  color: #e0e0e0; /* Light grey for hero text */
+  font-size: 18px; /* Base font size for better readability */
+}
+
+.order-now {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  margin-top: 25px;
+  border: none; /* Removed border */
+  background-color: #2980b9; /* Updated background color */
+  color: #ffffff; /* White text color */
+  padding: 12px 24px; /* More padding for a button feel */
+  border-radius: 25px; /* Rounded button corners */
+  font-size: 16px; /* Consistent font size */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.order-now:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  #hero-title {
+    font-size: 32px; /* Smaller font size for medium screens */
+  }
+
+  #hero-text {
+    font-size: 16px; /* Adjust text size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto; /* Allow height to adjust on smaller screens */
+    padding: 20px 10px; /* Reduce padding for small screens */
+  }
+
+  #hero-title {
+    font-size: 26px; /* Smaller font size for titles on small screens */
+    font-weight: 600; /* Reduce font weight on small screens */
+  }
+
+  #hero-text {
+    font-size: 14px; /* Smaller*/
+  }}
